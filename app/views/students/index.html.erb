@@ -1,0 +1,9 @@
+
+<% @students.each do |student| %>
+  <%= student.name %>
+  <%= student.registration %>
+  <%=  student.status %>
+  <button><%= link_to "Editar", edit_student_path(student) %></button>
+  <button><%= link_to "Detalhar", student %></button>
+  <button><%= link_to "Deletar", student, method: :delete, data: { confirm: "Você tem certeza?" } %></button>  
+<% end %>
