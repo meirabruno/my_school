@@ -5,14 +5,10 @@ default: &default
 
 development:
   <<: *default
-  username: tracersoft
-  password: supertracer10
   database: my_school_development
 
 test:
   <<: *default
-  username: tracersoft
-  password: supertracer10
   database: my_school_test
 
 production:
